@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cd /Users/CFarzaneh/Dropbox/Public/repo/
+dpkg-scanpackages debs / > Packages
+bzip2 -fks Packages
+rm Packages
+echo Refresh Complete
