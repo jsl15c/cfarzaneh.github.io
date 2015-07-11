@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /Users/CFarzaneh/Dropbox/Public/repo/
+cd /Users/cfarzaneh/Documents/cfarzaneh.github.io/
 dpkg-scanpackages debs / > Packages
 bzip2 -fks Packages
 rm Packages
