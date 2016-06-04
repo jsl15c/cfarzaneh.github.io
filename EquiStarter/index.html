@@ -1,0 +1,40 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="vendors/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+    		$('#fullpage').fullpage({
+    			sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke'],
+    			css3: true
+    		});
+		});
+	</script>
+
+	<style type="text/css">
+		.section{
+			font-size: 6em;
+			text-align: center;
+		}
+	</style>
+
+</head>
+<body>
+<div id="fullpage">
+    <div class="section">Home</div>
+    <div class="section">
+    	<div class="slide">Slide 1</div>
+    	<div class="slide">Slide 2</div>
+    </div>
+    <div class="section">Contact</div>
+    <div class="section">Fund</div>
+</div>
+</body>
+</html>
