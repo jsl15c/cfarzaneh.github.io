@@ -1,40 +1,82 @@
-<DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>EquiStarter</title>
+	<meta name="author" content="Cameron Farzaneh" />
+	<meta name="description" content="EquiStarter website created by Cameron Farzaneh" />
+	<meta name="keywords"  content="fullpage,jquery,looping,loop,loopTop,loopBottom,demo" />
+	<meta name="Resource-type" content="Document" />
+
 
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="vendors/jquery.easings.min.js"></script>
-	<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
-	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<link rel="stylesheet" type="text/css" href="examples.css" />
 
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-    		$('#fullpage').fullpage({
-    			sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke'],
-    			css3: true
-    		});
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#7BAABE'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+				menu: '#menu',
+				loopTop: true,
+				loopBottom: true
+			});
 		});
 	</script>
 
-	<style type="text/css">
-		.section{
-			font-size: 6em;
-			text-align: center;
-		}
-	</style>
-
 </head>
 <body>
+
+
+<ul id="menu">
+	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">How it Works</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">About Us</a></li>
+	<li data-menuanchor="4thPage"><a href="#4thPage">Contact</a></li>
+</ul>
+
 <div id="fullpage">
-    <div class="section">Home</div>
-    <div class="section">
-    	<div class="slide">Slide 1</div>
-    	<div class="slide">Slide 2</div>
-    </div>
-    <div class="section">Contact</div>
-    <div class="section">hello</div>
+	<div class="section " id="section0">
+		<h1>EquiStarter</h1>
+		<p>Equity Crowdfunding Done Right.</p>
+		<br>
+		<p>Coming Soon.</p>
+		<img src="imgs/fullPage.png" alt="fullPage" />
+	</div>
+	<div class="section" id="section1">
+		<div class="intro">
+			<h1>Looping!</h1>
+			<p>Go to the first section and scroll up or to the last one and scroll down to see how it works.</p>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="introAbout">
+			<h1>About Us</h1>
+			<br>
+			<p>We provide an Equity crowdfunding community that allows for an innovative society. We look to serve as the platform that will allow the intellectual property of the world to gain funding for their inventions and ideas. With our help, our startups obtain the ability to sustain their invention while gaining the funding for growth.</p>
+			<br>
+			<p>Our platform allows for unaccredited investors to do their part in promoting a society of innovation and economic growth. Our Startups have been vetted and approved by having the ability to gain sustainability in the market and are serious contenders to compete with innovation.</p>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>Scroll Down</h1>
+			<p>And it will loop to the first section</p>
+		</div>
+	</div>
 </div>
+
 </body>
 </html>
