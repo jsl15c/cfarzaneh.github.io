@@ -9,16 +9,15 @@
 	<meta name="keywords"  content="fullpage,jquery,looping,loop,loopTop,loopBottom,demo" />
 	<meta name="Resource-type" content="Document" />
 
-
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
 
 	<!-- Ubuntu font -->
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet" type="text/css">
 	
+	<!-- MailChimp CSS -->
 	<link href="http://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 	
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet" type="text/css">
 	<style type="text/css">
 
 	/* Defining each section background and styles
@@ -49,7 +48,6 @@
 	}
 	
 	#mc_embed_signup{background:transparent; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-	
 
 	</style>
 	<!--[if IE]>
@@ -66,7 +64,7 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+				anchors: ['equistarter', 'howitworks', 'aboutus', 'contactus'],
 				menu: '#menu',
 				loopTop: true,
 				navigation: true,
@@ -81,10 +79,10 @@
 
 
 <ul id="menu">
-	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">EquiStarter</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage">How it Works</a></li>
-	<li data-menuanchor="3rdPage"><a href="#3rdPage">About Us</a></li>
-	<li data-menuanchor="4thPage"><a href="#4thPage">Contact</a></li>
+	<li data-menuanchor="equistarter" class="active"><a href="#equistarter">EquiStarter</a></li>
+	<li data-menuanchor="howitworks"><a href="#howitworks">How it Works</a></li>
+	<li data-menuanchor="aboutus"><a href="#aboutus">About Us</a></li>
+	<li data-menuanchor="contactus"><a href="#contactus">Contact Us</a></li>
 </ul>
 
 <div id="fullpage">
@@ -94,20 +92,16 @@
 		<p>Equity Crowdfunding Done Right.</p>
 		<p>Coming Soon.</p>
 		<br>
-
-
-
-
-<div id="mc_embed_signup">
-<form action="https://Equistarter.us13.list-manage.com/subscribe/post?u=13232284dd5f81b28612e3e3a&amp;id=bf9e9f4cbe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<label for="mce-EMAIL">Subscribe to our mailing list for updates</label>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_13232284dd5f81b28612e3e3a_bf9e9f4cbe" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
+		<div id="mc_embed_signup">
+			<form action="https://Equistarter.us13.list-manage.com/subscribe/post?u=13232284dd5f81b28612e3e3a&amp;id=bf9e9f4cbe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+   			<div id="mc_embed_signup_scroll">
+			<label for="mce-EMAIL">Subscribe to our mailing list for updates</label>
+			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    		<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    		<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_13232284dd5f81b28612e3e3a_bf9e9f4cbe" tabindex="-1" value=""></div>
+   			<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+   			</div>
+			</form>
 </div>
 
 <!--End mc_embed_signup-->
@@ -115,7 +109,7 @@
 
 	</div>
 	<div class="section" id="section1">
-		<div class="intro">
+		<div class="introHowWorks">
 			<h1>How it Works</h1>
 			<br>
 			<p>1)	Browse the Starups Listed.</p>
@@ -136,10 +130,7 @@
 		<div class="intro">
 			<h1>Contact Us</h1>
 			<p>President and Founder:
-			
-			<a href="mailto:michele@Equistarter.com">Michele Chiacchios</a>
-			
-			
+			<a href="mailto:michele@equistarter.com">Michele Chiacchios</a>
 			</p>
 			<p>Startups Contact:
 			<a href="mailto:startups@equistarter.com">startups@equistarter.com</a>
