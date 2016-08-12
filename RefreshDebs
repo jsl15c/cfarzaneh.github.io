@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /Users/cfarzaneh/Documents/Development\ Projects/Cydia\ Repo/cfarzaneh.github.io/
+cd /Users/cfarzaneh/Documents/Development\ Projects/cfarzaneh.github.io/
 dpkg-scanpackages debs / > Packages
 bzip2 -fks Packages
 rm Packages
