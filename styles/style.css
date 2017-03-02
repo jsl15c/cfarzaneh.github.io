@@ -21,17 +21,32 @@ h1, h2, h3, h4, h5, h6 {
 
 a {text-decoration: none}
 
-#button{
-  margin-top: 20px;
+.container {
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+}
+
+.content {
+  position:relative;
+  width:700px;
+  height:500px;
+  display: table-cell;
+  vertical-align: middle;
+  top: -7%;
 }
 
 #itunes-button {
-  display:inline-block;
-  overflow:hidden;
-  background:url('linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg') no-repeat;
-  width:135px;
-  height:40px;
-  background-size:contain;
+  position:relative;
+  top:20px;
+  display:block;
+  margin:0 auto;
+}
+
+#headshot {
+  border-radius: 100px;
+  width:200px;
 }
 
 .social-link {
